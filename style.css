@@ -48,6 +48,22 @@ body {
     background-color: #449d82;
 }
 
+#guessInput {
+    width: 150px;
+    padding: 5px;
+    font-size: 15px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    margin: 5px;
+    text-align: center;
+}
+
+#guessInput:focus {
+    outline: none;
+    border-color: #4ecdc4;
+    box-shadow: 0 0 5px rgba(78, 205, 196, 0.3);
+}
+
 #message {
     font-weight: bold;
     margin-top: 20px;
