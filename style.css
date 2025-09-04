@@ -47,3 +47,8 @@ body {
 #submitGuess:hover {
     background-color: #449d82;
 }
+
+#message {
+    font-weight: bold;
+    margin-top: 20px;
+}
