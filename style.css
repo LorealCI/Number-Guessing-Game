@@ -17,7 +17,7 @@ body {
 }
 
 #resetGame {
-    background-color: #4CAF50;
+    background-color: #d65b5b;
     color: white;
     border: none;
     padding: 10px 10px;
@@ -29,7 +29,7 @@ body {
 }
 
 #resetGame:hover {
-    background-color: #45a049;
+    background-color: #af4c4c;
 }
 
 #submitGuess {
@@ -51,4 +51,15 @@ body {
 #message {
     font-weight: bold;
     margin-top: 20px;
+}
+
+.message-low {
+    color: blue;
+}
+
+.message-high {
+    color: red;
+} 
+.message-correct {
+    color: green;
 }

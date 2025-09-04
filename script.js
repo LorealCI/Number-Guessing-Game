@@ -23,24 +23,32 @@ submitGuess.addEventListener("click", function() {
 
   if (userGuess < 1 || userGuess > 100) {
     message.textContent = "Please enter a number between 1 and 100.";
+    message.classList.remove("message-low", "message-high", "message-correct");
     return;
   }
 
   guessCount++;
   guessCountDisplay.textContent = `Guesses: ${guessCount}`;
 
+  // Reset color classes
+  message.classList.remove("message-low", "message-high", "message-correct");
+
   if (userGuess === randomNumber) {
     message.textContent = `Correct! You guessed it in ${guessCount} tries!`;
+    message.classList.add("message-correct");
     endGame();
   } else if (userGuess < randomNumber) {
     message.textContent = "Too low! Try again.";
+    message.classList.add("message-low");
   } else {
     message.textContent = "Too high! Try again.";
+    message.classList.add("message-high");
   }
 
   guessInput.value = "";
   guessInput.focus();
 });
+
 
 resetGame.addEventListener("click", generateRandomNumber);
 
